@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    
+    background: linear-gradient(to left, #0e75ea, #00ddff);
+	font-family: 'Baloo 2', cursive;
+    
+}
+.banner-text {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.banner-text ul {
+	height: 50px;
+	float: right;
+}
+.banner-text ul li {
+	display: inline-block;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+}
+.banner-text ul li:hover {
+	cursor: pointer;
+}
+/*fONDO AMPLIAR O DISMINUIR*/
+.animation-area {
+	background: linear-gradient(to left, #0e75ea, #00ddff);
+	width: 99vw;
+	height: 140vh;
+}
+/*fONDO AMPLIAR O DISMINUIR*/
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 170%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(0, 0, 0, 0.2);
+	animation: animate 10s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+.botonjuego{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:  #0e75ea;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #000000;
+  }
+  
+  .botonjuego:hover {background-color: #484af8}
+  
+  .botonjuego:active {
+    background-color: #484af8;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0f029e;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #000000;
+  }
+  
+  .button:hover {background-color: #484af8}
+  
+  .button:active {
+    background-color: #484af8;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+  }
+
+  .boton {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #000000;
+  }
+  
+  .boton:hover {background-color: #484af8}
+  
+  .boton:active {
+    background-color: #484af8;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+  }
+
+  .nav-brand {
+    width: 160px;
+  }
+
+  .nav-main {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 20px 0;
+  }
+
+  .sammy-wrap {
+    border-radius: 6px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 2px dashed rgba(128, 128, 128, 0);
+    max-width: 70%;
+    padding: 1em;
+    margin-bottom: .4em;
+  }
+
+/*JUEGO*/
+.contenedor {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], select {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	padding: 10px;
+	background-color: #008000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #006400;
+}
+
+#resultado {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #d3d3d3;
+	border-radius: 5px;
+	display: none;
+}
