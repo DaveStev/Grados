@@ -31,7 +31,7 @@ body {
 .animation-area {
 	background: linear-gradient(to left, #0e75ea, #00ddff);
 	width: 99vw;
-	height: 140vh;
+	height: 100vh;
 }
 /*fONDO AMPLIAR O DISMINUIR*/
 .box-area {
@@ -39,7 +39,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 90%;
-	height: 170%;
+	height: 100%;
 	overflow: hidden;
 }
 .box-area li {
